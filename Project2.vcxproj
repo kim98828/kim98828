@@ -35,7 +35,7 @@
     <ClInclude Include="Hog.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Monster.h" />
-    <ClInclude Include="Playar.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Render.h" />
     <ClInclude Include="Slime.h" />
     <ClInclude Include="Tick.h" />

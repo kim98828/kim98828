@@ -17,8 +17,8 @@ void Swap(int *x, int *y)
 
 int main()
 {
-
-
+	Player NewPlayer;
+	NewPlayer.SetHP(-100);
 
 
 	while (bIsRunning)
