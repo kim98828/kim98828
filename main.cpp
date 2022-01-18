@@ -4,6 +4,9 @@
 #include "Render.h"
 #include "Tick.h"
 #include "Input.h"
+#include "Goblin.h"
+#include "Hog.h"
+#include "Slime.h"
 #include "Player.h"
 using namespace std;
 
@@ -19,8 +22,9 @@ int main()
 {
 	Player NewPlayer;
 	NewPlayer.SetHP(-100);
-
-
+	int CurrentHP = NewPlayer.GetHP();
+	Slime NewSlime;
+	Goblin NewGoblin;
 	while (bIsRunning)
 	{
 		Input();

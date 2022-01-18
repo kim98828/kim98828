@@ -7,6 +7,7 @@ private:
 public:
 	int MP;
 	int Gold;
+public:
 	void SetHP(int NewHP)
 	{
 		if (NewHP >= 0)
