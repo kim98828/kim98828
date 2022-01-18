@@ -8,6 +8,7 @@
 #include "Hog.h"
 #include "Slime.h"
 #include "Player.h"
+#include <vector>
 using namespace std;
 
 void Swap(int *x, int *y)
@@ -20,11 +21,24 @@ void Swap(int *x, int *y)
 
 int main()
 {
-	Player NewPlayer;
-	NewPlayer.SetHP(-100);
-	int CurrentHP = NewPlayer.GetHP();
-	Slime NewSlime;
-	Goblin NewGoblin;
+	vector<Player*> PlayerList;
+
+	PlayerList.push_back(new Player);
+	PlayerList.push_back(new Player);
+	PlayerList.push_back(new Player);
+	PlayerList.push_back(new Player);
+	PlayerList.push_back(new Player);
+
+	for (size_t i = 0; i < PlayerList.size(); i++)
+	{
+		cout << "Player" << i + 1 << "¹øÂ°HP:" << PlayerList[i]->GetHP() << endl;
+	}
+	for (size_t i = 0; i < PlayerList.size(); i++)
+	{
+		delete PlayerList[i];
+	}
+	PlayerList.clear();
+	cout << PlayerList.size() << endl;
 	while (bIsRunning)
 	{
 		Input();
